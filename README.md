@@ -7,7 +7,7 @@ buildscript {
     }
 
     dependencies {
-        classpath 'com.android.tools.build:gradle:+'
+        classpath 'com.android.tools.build:gradle:PUT_SPECFIC_VERSION_HERE+'
     }
 }
 
@@ -15,13 +15,13 @@ repositories {
     mavenCentral()
     mavenLocal()
     maven {
-        url "http://mente.github.io/facebook-api-android-aar"
+        url "http://bright.github.io/maven-repo/"
     }
 }
 
 apply plugin: 'android'
 dependencies {
-    compile 'com.facebook:facebook-android-sdk:+@aar'
+    compile 'com.facebook:facebook-android-sdk:3.19@aar'
     //your other dependencies
 }
 
