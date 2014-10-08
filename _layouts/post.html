@@ -9,12 +9,21 @@ layout: default
   </header>
 
   <article class="post-content">
+    {{ content }}
+  </article>
+
+  <article class="post-content">
+    {% assign data = site.data[page.data_name] %}
+    {% capture my_include %}{% include gradle_compile_sample.md artifactId=data.artifactId groupId=data.groupId versions=data.versions %}{% endcapture %}
+    {{ my_include | markdownify }}
+  </article>
+
+  <article class="post-content">
     <p>
-      {% capture my_include %}{% include gradle_sample.md %}{% endcapture %}
+      {% capture my_include %}{% include gradle_android_sample.md artifactId=data.artifactId groupId=data.groupId versions=data.versions %}{% endcapture %}
       {{ my_include | markdownify }}
     </p>
 
-    {{ content }}
   </article>
 
 </div>

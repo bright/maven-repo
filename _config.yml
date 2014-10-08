@@ -10,5 +10,7 @@ url: "bright.github.io" # the base hostname & protocol for your site
 twitter_username: bright
 github_username:  bright
 
+permalink: /:categories.html
+
 # Build settings
 markdown: kramdown

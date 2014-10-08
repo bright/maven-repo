@@ -20,9 +20,10 @@ repositories {
     }
 }
 
-apply plugin: 'android'
+apply plugin: 'com.android.application'
+
 dependencies {
-    compile 'com.facebook:facebook-android-sdk:3.19@aar'
+    compile '{{ include.groupId }}:{{ include.artifactId }}:{{ include.versions | last}}@aar'
     //your other dependencies
 }
 

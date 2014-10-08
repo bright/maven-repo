@@ -1,0 +1,10 @@
+---
+layout: post
+title:  "Facebook Android SDK"
+date:   2014-10-07 20:18:40
+categories: com.facebook facebook-android-sdk
+data_name: facebook_android_sdk
+groupId: com.facebook
+artifactId: facebook-android-sdk
+versions: ["3.19"]
+---

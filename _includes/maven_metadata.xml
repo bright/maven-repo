@@ -1,0 +1,13 @@
+<metadata>
+  <groupId>{{ include.groupId }}</groupId>
+  <artifactId>{{ include.artifactId }}</artifactId>
+  <version>{{ include.versions | last }}</version>
+  <versioning>
+    <versions>
+      {% for version in include.versions %}
+      <version>{{ version }}</version>
+      {% endfor %}
+    </versions>
+    <lastUpdated>20141008192133</lastUpdated>
+  </versioning>
+</metadata>
