@@ -1,6 +1,7 @@
 ---
 layout: default
 ---
+{% assign data = site.data[page.data_name] %}
 <div class="post">
 
   <header class="post-header">
@@ -13,7 +14,6 @@ layout: default
   </article>
 
   <article class="post-content">
-    {% assign data = site.data[page.data_name] %}
     {% capture my_include %}{% include gradle_compile_sample.md artifactId=data.artifactId groupId=data.groupId versions=data.versions %}{% endcapture %}
     {{ my_include | markdownify }}
   </article>
