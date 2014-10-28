@@ -1,3 +1,4 @@
 artifactId: facebook-android-sdk
 groupId: com.facebook
-version: "3.19"
+versions:
+  - 3.19
